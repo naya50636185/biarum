@@ -1,0 +1,54 @@
+$white: #fff;
+$lighter-gray: #f4f6f9;
+$light-gray: #505a64;
+$middle-gray: #46505a;
+$dark-gray: #3d3e46;
+$darken-gray: #3f4049;
+$green: #64c800;
+$light-blue-gray: #a8b6c7;
+$blue: #1b8aaa;
+$black: #000;
+
+
+//$hover-green: #67ad21;
+//$focus-green: ;
+//$active-green: #497f12;
+//$disabled-green: ;
+//
+//$hover-blue: ;
+//$focus-blue: ;
+//$active-blue: ;
+//$disabled-blue: ;
+//
+//$hover-light-blue-gray: ;
+//$focus-light-blue-gray: ;
+//$active-light-blue-gray: ;
+//$disabled-light-blue-gray: ;
+//
+//$hover-white: ;
+//$focus-white: ;
+//$active-white: ;
+//$disabled-white: ;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: $black;
+  background: $white;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  background: $darken-gray;
+}
