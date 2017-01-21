@@ -1,8 +1,11 @@
 all:
 	@echo "Use <make install> for installing dependencies."
-	@echo "Use <make build> to build and compile project files."
+	@echo "Use <make watch> to watch project files."
+	@echo "Use <make build> to build project files."
 install:
 	npm install
 	bower i
-build:
+watch:
 	gulp watch
+build:
+    gulp build

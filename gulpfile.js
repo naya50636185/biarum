@@ -16,10 +16,20 @@ gulp.task('sass', function () {
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(gulp.dest('./app/css'));
 });
+
 gulp.task('watch', function () {
     gulp.src('./app/templates/**/*.jade')
         .pipe(jade({pretty: true}))
         .pipe(gulp.dest('./app/html/'));
     gulp.watch('./app/templates/**/*.jade', ['jade-compile']);
     gulp.watch(['./app/sass/**/*.sass', './app/sass/**/*.scss'], ['sass']);
+});
+
+gulp.task('build', function () {
+    gulp.src('./app/templates/*.jade')
+        .pipe(jade({pretty: true}))
+        .pipe(gulp.dest('./assets/'));
+    gulp.src(['./app/sass/**/*.sass', './app/sass/**/*.scss'])
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(gulp.dest('./assets/css'));
 });
