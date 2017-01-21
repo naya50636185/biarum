@@ -28,7 +28,7 @@ gulp.task('watch', function () {
 gulp.task('build', function () {
     gulp.src('./app/templates/*.jade')
         .pipe(jade({pretty: true}))
-        .pipe(gulp.dest('./assets/'));
+        .pipe(gulp.dest('./assets/html/'));
     gulp.src(['./app/sass/**/*.sass', './app/sass/**/*.scss'])
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(gulp.dest('./assets/css'));
