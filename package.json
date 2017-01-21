@@ -1,0 +1,25 @@
+{
+  "name": "biarum",
+  "version": "1.0.0",
+  "description": "Test task",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naya50636185/biarum.git"
+  },
+  "author": "Anastasia Bondarenko <naya50636185@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naya50636185/biarum/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "homepage": "https://github.com/naya50636185/biarum#readme"
+}

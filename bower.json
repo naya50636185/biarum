@@ -1,0 +1,13 @@
+{
+  "name": "biarum",
+  "description": "Test task",
+  "authors": [
+    "Anastasia Bondarenko <naya50636185@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/naya50636185/biarum",
+  "dependencies": {
+    "jquery": "1.11.1",
+    "slick-carousel": "^1.6.0"
+  }
+}
