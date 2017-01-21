@@ -1,1 +1,11 @@
 .idea/
+bower_components/
+node_modules/
+app/css/
+app/html/
+
+.DS_Store
+*.log
+*.db
+*.html
+*.htm
