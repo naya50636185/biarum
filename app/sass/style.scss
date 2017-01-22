@@ -271,3 +271,20 @@ header {
   }
 }
 
+#lorem-4 {
+  background: $lighter-gray;
+  .form-block {
+    margin: 0 10px;
+    box-sizing: border-box;
+    &__text {
+      width: 700px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 24px;
+      color: $middle-gray;
+    }
+    &__book {
+
+    }
+  }
+}
