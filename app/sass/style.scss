@@ -90,6 +90,24 @@ h3 {
   color: $green;
 }
 
+.green-button {
+  background: $green;
+  color: $white;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  padding: 7px 50px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ancor {
+  display: block;
+  position: relative;
+  top: -82px;
+  visibility: hidden;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -99,7 +117,7 @@ header {
   .logo-side {
     float: left;
     width: 170px * 100% / 960px;
-    margin-right: 20px;
+    margin-right: 20px * 100% / 960px;
     padding-top: 20px;
     padding-bottom: 14px;
   }
@@ -108,15 +126,23 @@ header {
     width: 520px * 100% / 960px;
     ul {
       list-style: none;
+      padding: 0;
+      margin: 0;
       li {
         display: inline-block;
+        a {
+          text-decoration: none;
+          color: $white;
+          padding: 0 30px;
+        }
       }
     }
   }
   .button-side {
+    text-align: right;
     float: left;
     width: 230px * 100% / 960px;
-    margin-left: 20px;
+    margin-left: 20px * 100% / 960px;
     padding-top: 21px;
     padding-bottom: 20px;
   }
