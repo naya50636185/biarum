@@ -47,8 +47,95 @@ body {
   margin: 0 auto;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: $white;
+  font-size: 82px;
+  & span {
+    color: $green;
+  }
+}
+
+h2, h4 {
+  color: $dark-gray;
+  font-size: 52px;
+  & span {
+    color: $blue;
+  }
+}
+
+h3 {
+  color: $white;
+  font-size: 52px;
+  & span {
+    color: $green;
+  }
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.color-green {
+  color: $green;
+}
+
 header {
   width: 100%;
+  position: fixed;
+  z-index: 1;
   margin: 0 auto;
   background: $darken-gray;
+  .logo-side {
+    float: left;
+    width: 170px * 100% / 960px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+  .menu-side {
+    float: left;
+    width: 520px * 100% / 960px;
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  .button-side {
+    float: left;
+    width: 230px * 100% / 960px;
+    margin-left: 20px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
 }
+
+#lorem-1 {
+  padding-top: 82px;
+}
+
+#lorem-3 {
+  width: 100%;
+  height: 630px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/section-3_bg.jpg) no-repeat;
+  background-size: cover;
+  .lorem-3__text {
+    color: $white;
+    text-align: center;
+  }
+}
+
