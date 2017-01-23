@@ -12,20 +12,14 @@ section#lorem-4
         img(src="../img/book.jpg", alt="Inside Tracker book")
       .form-block__form
         form#order
-          .label-side
-            .form-line
-              label(for="first-name") First Name
-            .form-line
-              label(for="last-name") Last Name
-            .form-line
-              label(for="email") Email
-          .input-side
-            .form-line
-              input.grey-input#first-name(type="text", placeholder="First Name", name="first-name")
-            .form-line
-              input.grey-input#last-name(type="text", placeholder="Last Name", name="last-name")
-            .form-line
-              input.grey-input#email(type="text", placeholder="Email", name="email")
-          .clear
+          .form-line.clear
+            label(for="first-name") First Name
+            input.grey-input#first-name(type="text", placeholder="First Name", name="first-name")
+          .form-line.clear
+            label(for="last-name") Last Name
+            input.grey-input#last-name(type="text", placeholder="Last Name", name="last-name")
+          .form-line.clear
+            label(for="email") Email
+            input.grey-input#email(type="text", placeholder="Email", name="email")
           .button-side
             button.green-button Lorem ipsum

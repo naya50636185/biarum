@@ -56,12 +56,12 @@ $( document ).ready(function() {
     // menu toggle
 
     $('button.menu-icon-open').click(function () {
-        $('.navbar-collapse.collapse').animate({
+        $('.navbar-collapse').animate({
             right: '0'
         }, 200);
     });
-    $('.button.menu-icon-close').click(function () {
-        $('.navbar-collapse.collapse').animate({
+    $('button.menu-icon-close').click(function () {
+        $('.navbar-collapse').animate({
             right: '-100%'
         }, 200);
     });
