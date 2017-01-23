@@ -8,4 +8,4 @@ install:
 watch:
 	gulp watch
 build:
-    gulp build
+	gulp build
