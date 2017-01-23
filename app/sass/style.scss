@@ -20,7 +20,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  font-size: 100%;
+  font-size: 16px;
   color: $black;
   background: $white;
 }
@@ -49,6 +49,7 @@ h2, h4 {
   color: $dark-gray;
   font-size: 52px;
   padding-top: 80px;
+  margin-bottom: 60px;
   & span {
     color: $blue;
   }
@@ -58,6 +59,7 @@ h3 {
   color: $white;
   font-size: 52px;
   padding-top: 80px;
+  margin-bottom: 60px;
   & span {
     color: $green;
   }
@@ -127,6 +129,12 @@ h3 {
   visibility: hidden;
 }
 
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -179,7 +187,7 @@ header {
     .slider-text {
       color: $white;
       position: absolute;
-      bottom: 32px;
+      bottom: 60px;
       margin: 0;
       width: 100%;
       .wrapper {
@@ -200,7 +208,8 @@ header {
       &__slogan {
         text-transform: uppercase;
         font-size: 18px;
-        letter-spacing: -1px;
+        letter-spacing: -2px;
+        font-weight: bold;
       }
     }
   }
@@ -211,7 +220,7 @@ header {
 }
 
 .slick-dots {
-  bottom: 5px;
+  bottom: 20px;
   li {
     margin: 0;
     button {
@@ -232,7 +241,8 @@ header {
 #lorem-2 {
   padding-bottom: 65px;
   .slider-carousel {
-    margin-bottom: 60px;
+    width: 860px;
+    margin: 0 auto 60px;
     &__slide {
       text-align: center;
       img {
@@ -242,7 +252,7 @@ header {
     &__text {
       font-size: 18px;
       color: $light-gray;
-      margin-bottom: 25px;
+      margin: 0 10px 25px;
     }
     &__links {
 
@@ -273,18 +283,68 @@ header {
 
 #lorem-4 {
   background: $lighter-gray;
+  padding-bottom: 160px;
   .form-block {
     margin: 0 10px;
-    box-sizing: border-box;
+    background: $white;
     &__text {
       width: 700px;
       text-align: center;
       margin: 0 auto;
       font-size: 24px;
       color: $middle-gray;
+      padding: 60px 0;
+      p {
+        margin: 0;
+      }
     }
     &__book {
-
+      width: 300px * 100% / 940px;
+      float: left;
+      text-align: center;
+      position: relative;
+      img {
+        position: absolute;
+        left: 40px;
+      }
+    }
+    &__form {
+      width: (640px - 60px) * 100% / 940px;
+      float: right;
+      form {
+        padding-right: 60px;
+        .label-side {
+          width: 120px * 100% / 580px;
+          float: left;
+          label {
+            font-size: 16px;
+            color: $blue;
+            padding: 10px 0;
+            display: inline-block;
+            font-weight: bold;
+          }
+        }
+        .input-side {
+          width: (460px - 10px * 2 - 2px) * 100% / 580px;
+          float: right;
+          input {
+            border: 1px solid $light-blue-gray;
+            width: 100%;
+            color: $light-blue-gray;
+            padding: 10px 15px;
+            font-size: 16px;
+            box-sizing: border-box;
+          }
+        }
+        .form-line {
+          padding-bottom: 20px;
+        }
+      }
+      .button-side {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        text-align: right;
+      }
     }
   }
 }
