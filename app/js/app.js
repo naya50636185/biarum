@@ -1,4 +1,18 @@
 $( document ).ready(function() {
+
+    // slider section lorem-1
+
+    $('.slider-home').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    //slider section lorem-2
+
     $('.slider-carousel').slick({
         dots: false,
         arrows: true,
@@ -30,14 +44,7 @@ $( document ).ready(function() {
         ]
     });
 
-    $('.slider-home').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
+    //animation link to anchor
 
     $('.menu-side a[href^="#"]').click(function () {
         elementClick = $(this).attr("href");
@@ -45,4 +52,18 @@ $( document ).ready(function() {
         $('html, body').animate( { scrollTop: destination }, 1000 );
         return false;
     });
+
+    // menu toggle
+
+    $('button.menu-icon-open').click(function () {
+        $('.navbar-collapse.collapse').animate({
+            right: '0'
+        }, 200);
+    });
+    $('.button.menu-icon-close').click(function () {
+        $('.navbar-collapse.collapse').animate({
+            right: '-100%'
+        }, 200);
+    });
+
 });
