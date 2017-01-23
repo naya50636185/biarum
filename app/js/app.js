@@ -30,6 +30,7 @@ $( document ).ready(function() {
             }
         ]
     });
+
     $('.slider-home').slick({
         dots: true,
         arrows: false,
@@ -37,5 +38,12 @@ $( document ).ready(function() {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1
+    });
+
+    $('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+            scrollTop: $(el).offset().top}, 1000);
+        return false;
     });
 });
