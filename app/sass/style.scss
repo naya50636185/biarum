@@ -293,6 +293,33 @@ header {
 
 #lorem-2 {
   padding-bottom: 65px;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-spekles.png) no-repeat 100%;
+    background-size: contain;
+    background-position: 0 0;
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-spekles-bottom.png) no-repeat 100%;
+    background-size: contain;
+    background-position: 0 100%;
+    z-index: -1;
+  }
   .slider-carousel {
     width: 860px * 100% / 960px;
     margin: 0 auto 60px;
@@ -332,8 +359,40 @@ header {
 }
 
 #lorem-4 {
-  background: $lighter-gray;
+  background-color: $lighter-gray;
   padding-bottom: 160px;
+  .bg-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/bg-spekles.png) no-repeat 100%;
+      background-size: contain;
+      background-position: 0 0;
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/bg-spray.png) no-repeat 100%;
+      background-size: contain;
+      background-position: 0 100%;
+      z-index: -1;
+    }
+  }
+
   .form-block {
     margin: 0 10px;
     background: $white;
@@ -546,6 +605,9 @@ header {
   }
 
   #lorem-2 {
+    &:after, &:before {
+      display: none;
+    }
     .slider-carousel {
       width: 800px * 100% / 960px;
       &__slide {

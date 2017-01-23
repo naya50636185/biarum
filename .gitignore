@@ -3,7 +3,6 @@ bower_components/
 node_modules/
 app/css/
 app/html/
-assets/
 
 .DS_Store
 *.log
