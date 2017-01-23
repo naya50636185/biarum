@@ -21,6 +21,9 @@ gulp.task('watch', function () {
     gulp.src('./app/templates/**/*.jade')
         .pipe(jade({pretty: true}))
         .pipe(gulp.dest('./app/html/'));
+    gulp.src(['./app/sass/**/*.sass', './app/sass/**/*.scss'])
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(gulp.dest('./app/css'));
     gulp.watch('./app/templates/**/*.jade', ['jade-compile']);
     gulp.watch(['./app/sass/**/*.sass', './app/sass/**/*.scss'], ['sass']);
 });
