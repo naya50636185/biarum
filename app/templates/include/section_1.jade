@@ -1,10 +1,16 @@
 section#lorem-1
-  .ancor#lorem-1__ancor
+  .anchor#lorem-1__ancor
   .slider-wrap
     .slider-home
-      img(src="../img/slide-1.jpg", alt="First slide")
-      img(src="../img/slide-2.jpg", alt="Second slide")
-      img(src="../img/slide-3.jpg", alt="Third slide")
+      picture
+        source(media="(max-width: 750px)", srcset="../img/slide-mobile.jpg")
+        img(src="../img/slide-1.jpg", alt="First slide")
+      picture
+        source(media="(max-width: 750px)", srcset="../img/slide-mobile.jpg")
+        img(src="../img/slide-2.jpg", alt="First slide")
+      picture
+        source(media="(max-width: 750px)", srcset="../img/slide-mobile.jpg")
+        img(src="../img/slide-3.jpg", alt="First slide")
     .slider-text
       .wrapper
         h1 Lorem
