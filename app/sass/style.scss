@@ -306,6 +306,7 @@ header {
       img {
         position: absolute;
         left: 40px;
+        mix-blend-mode: multiply;
       }
     }
     &__form {
@@ -331,6 +332,7 @@ header {
             border: 1px solid $light-blue-gray;
             width: 100%;
             color: $light-blue-gray;
+            background: $white;
             padding: 10px 15px;
             font-size: 16px;
             box-sizing: border-box;
