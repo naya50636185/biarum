@@ -7,5 +7,4 @@ app/html/
 .DS_Store
 *.log
 *.db
-*.html
 *.htm
